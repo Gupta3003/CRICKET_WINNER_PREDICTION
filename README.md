@@ -5,7 +5,7 @@ This project uses **Machine Learning** to predict whether a team will successful
 ## 📁 Project Structure
 
 ```
-CRICKET_WINNER_PREDICTION/
+ipl_2025_chase_predictor/
 ├── ML Notebook/
 │   ├── ipl_target_chase_predictor.ipynb
 │   └── model.pkl
@@ -13,6 +13,7 @@ CRICKET_WINNER_PREDICTION/
 ├── data/
 │   ├── deliveries.csv
 │   └── matches.csv
+├── requirements.txt
 └── README.md
 ```
 
@@ -37,22 +38,55 @@ To predict whether the team batting second will **chase** the target successfull
 - Streamlit
 - Jupyter Notebook
 
-## 🚀 How to Use
+## 🛠️ Installation & Setup
 
-1. Clone the repository or download the project.
-2. Run the notebook from `ML Notebook/ipl_target_chase_predictor.ipynb` to explore or retrain the model.
-3. Launch the Streamlit app:
+1. **Clone this repository** or download the ZIP:
+
+```bash
+git clone https://github.com/yourusername/ipl_2025_chase_predictor.git
+cd ipl_2025_chase_predictor
+```
+
+2. **Create a virtual environment** (optional but recommended):
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+3. **Install required packages**:
+
+```bash
+pip install -r requirements.txt
+```
+
+If `requirements.txt` is missing, manually install:
+```bash
+pip install streamlit pandas scikit-learn numpy
+```
+
+## 🚀 How to Run the App
+
+After installing the dependencies, run the Streamlit app with:
 
 ```bash
 streamlit run app.py
 ```
 
-4. Enter match details (score, venue, teams) to get prediction.
+Then open the local URL provided by Streamlit in your browser (usually http://localhost:8501).
 
-## 📌 Note
+## 🧪 Model Training
 
-This model is trained using IPL 2025-style data. Accuracy depends on the quality and structure of the dataset.
+To explore or retrain the model:
 
----
+1. Open the Jupyter notebook:
+```bash
+jupyter notebook ML\Notebook\ipl_target_chase_predictor.ipynb
+```
 
-📬 For improvements or questions, feel free to contribute or open an issue.
+2. Run all cells to prepare the dataset, train the model, and export the `.pkl` file.
+
+## 📌 Notes
+
+- This model is trained using IPL-style data from past seasons.
+- Model accuracy and results depend heavily on feature engineering and clean data.
