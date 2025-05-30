@@ -5,7 +5,7 @@ This project uses **Machine Learning** to predict whether a team will successful
 ## 📁 Project Structure
 
 ```
-ipl_2025_chase_predictor/
+CRICKET_WINNER_PREDICTION/
 ├── ML Notebook/
 │   ├── ipl_target_chase_predictor.ipynb
 │   └── model.pkl
