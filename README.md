@@ -1,55 +1,58 @@
-# CRICKET_WINNER_PREDICTION
 # 🏏 IPL 2025 Target Chase Predictor
 
-This project uses **Machine Learning** to predict whether the target score set in the first innings of an IPL 2025 match will be **chased** or **not** in the second innings. The prediction is made based on historical match and delivery data from the Indian Premier League (IPL).
+This project uses **Machine Learning** to predict whether a team will successfully chase the target score in an IPL 2025 match based on the first innings score. It includes a data-driven ML model, a training notebook, and a Streamlit web app for predictions.
 
-## 🔍 Project Structure
+## 📁 Project Structure
 
-
+```
+ipl_2025_chase_predictor/
 ├── ML Notebook/
-│ ├── ipl_target_chase_predictor.ipynb # Jupyter notebook for training and evaluating the model
-│ └── model.pkl # Trained ML model saved using joblib or pickle
-├── app.py # Streamlit web application
+│   ├── ipl_target_chase_predictor.ipynb
+│   └── model.pkl
+├── app.py
 ├── data/
-│ ├── deliveries.csv # Ball-by-ball level data
-│ └── matches.csv # Match-level summary data
-└── README.md # Project documentation
+│   ├── deliveries.csv
+│   └── matches.csv
+└── README.md
+```
 
+## 📊 Datasets
 
-## 🧠 Problem Statement
+- `matches.csv`: Match-level summary (teams, venue, toss, winner, result).
+- `deliveries.csv`: Ball-by-ball delivery data with batsman, bowler, runs, etc.
 
-Given the **first innings score** and match context, predict whether the team batting second will be able to **chase** the target successfully.
+## 🧠 Objective
 
-## 📊 Data
-
-- **matches.csv**: Contains match-level details such as match ID, teams, venue, toss decision, result, etc.
-- **deliveries.csv**: Contains detailed delivery-by-delivery data, including runs, wickets, batsman, bowler, etc.
-
-## 🛠️ Features Used
-
-- First innings total score
+To predict whether the team batting second will **chase** the target successfully or **not**, based on:
+- First innings score
 - Venue
-- Batting and bowling teams
-- Toss winner and toss decision
-- Match year
-- Powerplay statistics (optional)
+- Teams playing
+- Toss winner and decision
 
-## 🧪 Model
+## ⚙️ Technologies Used
 
-A classification model is trained using scikit-learn (e.g., Random Forest, Logistic Regression) to predict the outcome:
-- `1`: Target chased
-- `0`: Target not chased
+- Python
+- Pandas & NumPy
+- Scikit-learn
+- Streamlit
+- Jupyter Notebook
 
-## 🚀 Running the App
+## 🚀 How to Use
 
-### Prerequisites
-
-Make sure you have Python 3.7+ installed.
-
-### Install Requirements
+1. Clone the repository or download the project.
+2. Run the notebook from `ML Notebook/ipl_target_chase_predictor.ipynb` to explore or retrain the model.
+3. Launch the Streamlit app:
 
 ```bash
-pip install -r requirements.txt
+streamlit run app.py
+```
 
-pip install pandas numpy scikit-learn streamlit
+4. Enter match details (score, venue, teams) to get prediction.
 
+## 📌 Note
+
+This model is trained using IPL 2025-style data. Accuracy depends on the quality and structure of the dataset.
+
+---
+
+📬 For improvements or questions, feel free to contribute or open an issue.
