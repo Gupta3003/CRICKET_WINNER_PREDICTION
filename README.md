@@ -17,6 +17,11 @@ ipl_2025_chase_predictor/
 └── README.md
 ```
 
+## Demo Vedio
+
+## Screenshorts
+|![Screenshot (984)](https://github.com/user-attachments/assets/b7452781-c275-4fee-be42-849291c005b8)|![Screenshot (983)](https://github.com/user-attachments/assets/3ae6c293-adc6-4861-9a74-5c514c7d12c7)|![Screenshot (982)](https://github.com/user-attachments/assets/ba3695c7-2dfc-48fe-bd55-fda46226f447)|
+
 ## 📊 Datasets
 
 - `matches.csv`: Match-level summary (teams, venue, toss, winner, result).
