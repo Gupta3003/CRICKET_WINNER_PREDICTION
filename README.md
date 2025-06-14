@@ -17,7 +17,7 @@ ipl_2025_chase_predictor/
 └── README.md
 ```
 
-## Demo Vedio
+## 📽️ Demo Vedio
 https://github.com/user-attachments/assets/3cbcdea0-4f69-4e7a-a424-e4813f1161e9
 
 
